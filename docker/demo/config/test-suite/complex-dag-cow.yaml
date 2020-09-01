@@ -60,7 +60,6 @@ first_hive_sync:
 first_hive_query:
   config:
     hive_props:
-      prop1: "set hive.execution.engine=spark"
       prop2: "set spark.yarn.queue="
       prop3: "set hive.strict.checks.large.query=false"
       prop4: "set hive.stats.autogather=false"
@@ -84,7 +83,6 @@ second_upsert:
 second_hive_query:
   config:
     hive_props:
-      prop1: "set hive.execution.engine=mr"
       prop2: "set mapred.job.queue.name="
       prop3: "set hive.strict.checks.large.query=false"
       prop4: "set hive.stats.autogather=false"
